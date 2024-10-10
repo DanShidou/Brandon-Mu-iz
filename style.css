@@ -84,3 +84,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.enlaces {
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+}
+
