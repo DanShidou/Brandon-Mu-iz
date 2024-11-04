@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamientos CSS3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .static {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid blue;
+        }
+        .relative {
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid green;
+            position: relative;
+        }
+        .absolute {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid red;
+            position: absolute;
+            top: 50px; /* Desde el borde superior del contenedor más cercano */
+            left: 50px; /* Desde el borde izquierdo del contenedor más cercano */
+        }
+        .fixed {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid gold;
+            position: fixed;
+            bottom: 10px; /* Desde el borde inferior de la ventana del navegador */
+            right: 10px; /* Desde el borde derecho de la ventana del navegador */
+        }
+        .container {
+            position: relative; /* Para que el elemento absoluto se posicione dentro de este contenedor */
+            height: 200px; /* Altura para visualizar mejor el posicionamiento */
+            border: 1px dashed gray;
+            margin-bottom: 50px; /* Para evitar que el elemento fijo se superponga */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="static">Posicionamiento Estático</div>
+
+    <div class="container">
+        <div class="relative">Posicionamiento Relativo</div>
+        <div class="absolute">Posicionamiento Absoluto</div>
+    </div>
+
+    <div class="fixed">Posicionamiento Fijo</div>
+
+</body>
+</html>
