@@ -16,72 +16,151 @@
         <tbody>
             <tr>
                 <td class="opciones de hamburguesa">
-                <input type="radio" name="hamSencilla" id="hamSencilla">
-                <label for="sencilla">Hamburguesa Sencilla $35.00 Mxn</label>
-                <br>
-                <input type="radio" name="hamEspecial" id="hamEspecial">
-                <label for="especial">Hamburguesa Especial $45.00 Mxn</label>
-                <br>
-                <input type="radio" name="hamDoble" id="hamDoble">
-                <label for="doble">Hamburguesa Doble $60.00 Mxn</label>
-                <br>
-                <input type="radio" name="hamSuprema" id="hamSuprema">
-                <label for="suprema">Hamburguesa Suprema $90.00 Mxn</label>
-            </td>
-            <td>
-                <input type="radio" name="tSencilla" id="tSencilla">
-                <label for="Tsencilla">Tradicional Especial</label>
-                <br>
-                <input type="radio" name="anEspecial" id="anEspecial">
-                <label for="Anespecial">Angus</label>
-                <br>
-                <input type="radio" name="dobPollo" id="dobPollo">
-                <label for="dobpollo">Pollo</label>
-                <br>
-                <input type="radio" name="beefSuprema" id="beefSuprema">
-                <label for="beefsuprema">Roast Beef</label>
-            </td>
-            <td>
-                <input type="checkbox" name="checkboxCebolla" id="checkboxCebolla" value="cebolla">
-                <label for="cebolla">Cebolla</label>
-                <br>
-                <input type="checkbox" name="checkboxQueso" id="checkboxQueso" value="queso">
-                <label for="queso">Queso</label>
-                <br>
-                <input type="checkbox" name="checkboxJamon" id="checkboxJamon" value="jamon">
-                <label for="jamon">Jamon</label>
-                <br>
-            </td>
-            <td>
-                <input type="checkbox" name="ingredienteAguacate" id="ingredienteAguacate" value="Aguacate">
-                <label for="aguacate">Aguacate</label>
-                <br>
-                <input type="checkbox" name="ingredientePiña" id="ingredientePiña" value="piña">
-                <label for="piña">Piña</label>
-                <br>
-                <input type="checkbox" name="ingredienteChampiñon" id="ingredienteChampiñon" value="champiñon">
-                <label for="champiñon">Champiñon</label>
-            </td>
-            <td>
-                <label for="cantidadH">Cantidad</label>
-                <input type="number" name="cantidadHamburguesas" id="">
-                <br>
-                <br>
-                <label for="cliente">Cliente</label>
-                <input type="text" name="cliente" id="inpcliente">
-                <br>
-                <br>
+                    <input type="radio" name="hamSencilla" id="hamSencilla">
+                    <label for="sencilla">Hamburguesa Sencilla $35.00 Mxn</label>
+                    <br>
+                    <input type="radio" name="hamEspecial" id="hamEspecial">
+                    <label for="especial">Hamburguesa Especial $45.00 Mxn</label>
+                    <br>
+                    <input type="radio" name="hamDoble" id="hamDoble">
+                    <label for="doble">Hamburguesa Doble $60.00 Mxn</label>
+                    <br>
+                    <input type="radio" name="hamSuprema" id="hamSuprema">
+                    <label for="suprema">Hamburguesa Suprema $90.00 Mxn</label>
+                </td>
+                <td>
+                    <input type="radio" name="tSencilla" id="tSencilla">
+                    <label for="Tsencilla">Tradicional Especial</label>
+                    <br>
+                    <input type="radio" name="anEspecial" id="anEspecial">
+                    <label for="Anespecial">Angus</label>
+                    <br>
+                    <input type="radio" name="dobPollo" id="dobPollo">
+                    <label for="dobpollo">Pollo</label>
+                    <br>
+                    <input type="radio" name="beefSuprema" id="beefSuprema">
+                    <label for="beefsuprema">Roast Beef</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="checkboxCebolla" id="checkboxCebolla" value="cebolla">
+                    <label for="cebolla">Cebolla</label>
+                    <br>
+                    <input type="checkbox" name="checkboxQueso" id="checkboxQueso" value="queso">
+                    <label for="queso">Queso</label>
+                    <br>
+                    <input type="checkbox" name="checkboxJamon" id="checkboxJamon" value="jamon">
+                    <label for="jamon">Jamon</label>
+                    <br>
+                </td>
+                <td>
+                    <input type="checkbox" name="ingredienteAguacate" id="ingredienteAguacate" value="Aguacate">
+                    <label for="aguacate">Aguacate</label>
+                    <br>
+                    <input type="checkbox" name="ingredientePiña" id="ingredientePiña" value="piña">
+                    <label for="piña">Piña</label>
+                    <br>
+                    <input type="checkbox" name="ingredienteChampiñon" id="ingredienteChampiñon" value="champiñon">
+                    <label for="champiñon">Champiñon</label>
+                </td>
+                <td>
+                    <label for="cantidadH">Cantidad</label>
+                    <input type="number" name="cantidadHamburguesas" id="">
+                    <br>
+                    <br>
+                    <label for="cliente">Cliente</label>
+                    <input type="text" name="cliente" id="inpcliente">
+                    <br>
+                    <br>
 
-               <label for="entrega">Entregar En:</label>
-                <select name="tipoentrega" id="lista">
-                <option value="1">A domicilio</option>
-                <option value="2">Comer Aqui</option>
-                <option value="3">Pick Up Order</option>
-                </select>
-            </td>
+                    <label for="entrega">Entregar En:</label>
+                    <select name="tipoentrega" id="lista">
+                        <option value="1">A domicilio</option>
+                        <option value="2">Comer Aqui</option>
+                        <option value="3">Pick Up Order</option>
+                    </select>
+                </td>
             </tr>
         </tbody>
         <tfoot></tfoot>
     </table>
+
+    <!-- Sección de scripts para nuevas opciones -->
+    <script>
+        // Crear nuevas opciones para hamburguesas
+
+        // 1. Opción para elegir el tipo de pan (Radio buttons)
+        var panOptions = document.createElement("div");
+        panOptions.innerHTML = `
+            <input type="radio" name="panTipo" id="panIntegral">
+            <label for="panIntegral">Pan Integral</label>
+            <br>
+            <input type="radio" name="panTipo" id="panAjonjoli">
+            <label for="panAjonjoli">Pan de Ajonjolí</label>
+            <br>
+            <input type="radio" name="panTipo" id="panSinGluten">
+            <label for="panSinGluten">Pan Sin Gluten</label>
+        `;
+        document.querySelector("td:nth-child(2)").appendChild(panOptions);
+
+        // 2. Opción para elegir el tipo de salsa (Checkboxes)
+        var salsaOptions = document.createElement("div");
+        salsaOptions.innerHTML = `
+            <input type="checkbox" name="salsaKetchup" id="salsaKetchup" value="ketchup">
+            <label for="salsaKetchup">Ketchup</label>
+            <br>
+            <input type="checkbox" name="salsaMayonesa" id="salsaMayonesa" value="mayonesa">
+            <label for="salsaMayonesa">Mayonesa</label>
+            <br>
+            <input type="checkbox" name="salsaBBQ" id="salsaBBQ" value="bbq">
+            <label for="salsaBBQ">BBQ</label>
+            <br>
+            <input type="checkbox" name="salsaChili" id="salsaChili" value="chili">
+            <label for="salsaChili">Salsa Chili</label>
+        `;
+        document.querySelector("td:nth-child(3)").appendChild(salsaOptions);
+
+        // 3. Opción para seleccionar el tamaño de la hamburguesa (Radio buttons)
+        var tamanoOptions = document.createElement("div");
+        tamanoOptions.innerHTML = `
+            <input type="radio" name="tamanoHamburguesa" id="tamanoPequena">
+            <label for="tamanoPequena">Pequeña</label>
+            <br>
+            <input type="radio" name="tamanoHamburguesa" id="tamanoMediana">
+            <label for="tamanoMediana">Mediana</label>
+            <br>
+            <input type="radio" name="tamanoHamburguesa" id="tamanoGrande">
+            <label for="tamanoGrande">Grande</label>
+        `;
+        document.querySelector("td:nth-child(1)").appendChild(tamanoOptions);
+
+        // 4. Opción para elegir acompañamiento (Checkboxes)
+        var acompanamientoOptions = document.createElement("div");
+        acompanamientoOptions.innerHTML = `
+            <input type="checkbox" name="papasFritas" id="papasFritas" value="papasFritas">
+            <label for="papasFritas">Papas Fritas</label>
+            <br>
+            <input type="checkbox" name="ensalada" id="ensalada" value="ensalada">
+            <label for="ensalada">Ensalada</label>
+            <br>
+            <input type="checkbox" name="nachos" id="nachos" value="nachos">
+            <label for="nachos">Nachos</label>
+        `;
+        document.querySelector("td:nth-child(4)").appendChild(acompanamientoOptions);
+
+        // 5. Opción para elegir el nivel de cocción de la carne (Radio buttons)
+        var coccionOptions = document.createElement("div");
+        coccionOptions.innerHTML = `
+            <input type="radio" name="nivelCoccion" id="coccionPoco">
+            <label for="coccionPoco">Poco Cocido</label>
+            <br>
+            <input type="radio" name="nivelCoccion" id="coccionMedio">
+            <label for="coccionMedio">Medio Cocido</label>
+            <br>
+            <input type="radio" name="nivelCoccion" id="coccionBien">
+            <label for="coccionBien">Bien Cocido</label>
+        `;
+        document.querySelector("td:nth-child(1)").appendChild(coccionOptions);
+    </script>
+
 </body>
 </html>
