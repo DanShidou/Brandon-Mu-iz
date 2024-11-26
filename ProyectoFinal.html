@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariscos Frescos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden; /* Evita que se desplace horizontalmente */
+        }
+        header {
+            background-color: #04aadd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: slideUp 1.5s ease-out;
+        }
+        header p {
+            font-size: 1.2rem;
+            animation: fadeIn 1s ease-out;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+            animation: slideIn 0.5s ease-out;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            opacity: 0;
+            animation: fadeInLinks 1s forwards;
+        }
+        nav a:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        nav a:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        nav a:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+        .product {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0;
+            animation: slideUp 1s forwards;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #f4f4f4;
+            animation: fadeIn 1.5s ease-out;
+        }
+        .product .info {
+            padding: 15px;
+        }
+        .product h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            animation: fadeIn 1s ease-out;
+        }
+        .product p {
+            color: #777;
+            font-size: 1rem;
+            margin: 10px 0;
+            animation: fadeIn 1s ease-out;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideUp {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInLinks {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante Los Danny´s</h1>
+        <p>Disfruta los mejores mariscos del océano</p>
+        <marquee behavior="scroll" direction="left" scrollamount="15">"¡Los mejores mariscos del océano, solo en Los Dannys! Frescura y sabor en cada bocado, ¡te esperamos para disfrutar del mar en su máximo esplendor!"</marquee>
+
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Menú</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <img src="img/camarones.webp" alt="camarones">
+            <div class="info">
+                <h3>Camarones</h3>
+                <p>Disfruta de nuestros camarones frescos, ideales para cualquier platillo.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/mojarra.jpg" alt="mojarras">
+            <div class="info">
+                <h3>Mojarras</h3>
+                <p>Las mojarras más frescas del mercado, perfectas para los amantes de los sabores del mar.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/filete.avif" alt="filete">
+            <div class="info">
+                <h3>Pescado Empanizado</h3>
+                <p>Delicioso pescado empanizado, ideal para cocinar de diversas maneras.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/coctel.jfif" alt="coctel de camarones">
+            <div class="info">
+                <h3>Coctel De Camarones</h3>
+                <p>"¡Frescura y sabor en cada bocado, disfruta nuestro cóctel de camarones!"</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Mariscos Frescos - Todos los derechos reservados</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
