@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestro Menu</title>
+
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Estilos para el encabezado con logotipo */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 10px 0;
+    }
+
+    header img {
+      max-width: 120px;
+      height: auto;
+      margin-left: 20px;
+    }
+
+    /* Estilos para la sección de platillos especiales */
+    .special__container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+
+    .section__header {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .special__description {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .special__grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .special__card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 30%;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .special__card:hover {
+      transform: translateY(-5px);
+    }
+
+    .special__card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .special__ratings {
+      margin: 10px 0;
+      color: #ff9500;
+    }
+
+    .special__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .add-to-cart-btn {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Estilos para el carrito */
+    .cart__container {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart__items {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .remove-btn {
+      background-color: #dc3545;
+      color: white;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .remove-btn:hover {
+      background-color: #c82333;
+    }
+
+    .cart__total {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    /* Botón de pago */
+    #checkout-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #checkout-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Mensaje de agradecimiento */
+    .thank-you-message {
+      display: none;
+      padding: 20px;
+      background-color: #28a745;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="img/logotipo.jpeg" alt="Logo" id="logo">
+  </header>
+
+  <div class="container">
+    <!-- Sección de Platillos Especiales -->
+    <section class="special__container">
+      <div class="section__header">
+        Nuestro Menu
+      </div>
+      <div class="special__description">
+        Disfruta de cada uno de nuestros deliciosos platillos
+      </div>
+      
+      <div class="special__grid">
+        <!-- Platillo 1 -->
+        <div class="special__card" data-id="1" data-price="140.00">
+          <img src="img/empanizad.jpg" alt="Platillo 1">
+          <h4>Filete de pescado empanizado</h4>
+          <p> filete empanizado se sirve con guarniciones como papas fritas, arroz, ensalada</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$140.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 2 -->
+        <div class="special__card" data-id="2" data-price="160.00">
+          <img src="img/camarones.webp" alt="Platillo 2">
+          <h4>Camarones Empanizados con philadelphia</h4>
+          <p>Ricos camarones empanizados rellenos de philadelphia con papas y arroz</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$160.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 3 -->
+        <div class="special__card" data-id="3" data-price="158.00">
+          <img src="img/coctel.png" alt="Platillo 3">
+          <h4>Coctel de camarones</h4>
+          <p>Rico coctel de camarones acompañado de aguacate y vegetales y de una rica salsa de tomate</p>
+          <div class="special__ratings">⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$158.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 4 -->
+        <div class="special__card" data-id="4" data-price="165.00">
+          <img src="img/mojarra.jpg" alt="Platillo 4">
+          <h4>Mojarra empanizada</h4>
+          <p>Mojarra acompañada con arroz y papas a la francesa</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$165.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 5 -->
+        <div class="special__card" data-id="5" data-price="117.00">
+          <img src="img/caldo.jpg" alt="Platillo 5">
+          <h4>Caldo de pescado</h4>
+          <p>Delicioso caldo de pescado, Pruebalo esta riquisimo</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$117.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 6 -->
+        <div class="special__card" data-id="6" data-price="189.00">
+          <img src="img/cevichep.jpg" alt="Platillo 6">
+          <h4>Ceviche de pescado</h4>
+          <p>Fresco y delicioso ceviche pruebalo no te arrepentiras</p>
+          <div class="special__ratings">⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$189.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 7 -->
+        <div class="special__card" data-id="7" data-price="220.00">
+          <img src="img/camaro.jpg" alt="Platillo 7">
+          <h4>Ceviche de camaron</h4>
+          <p>Fresco y delicioso ceviche de camarones ¡pruebalo ya que esperas!</p>
+          <div class="special__ratings">⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$220.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 8 -->
+        <div class="special__card" data-id="8" data-price="221.00">
+          <img src="img/bardal.jpeg" alt="Platillo 8">
+          <h4>Bardal</h4>
+          <p> Platillo de pescado, típicamente frito, en el que el pescado se cubre con una mezcla de pan rallado, harina y especias.</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$221.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 9 -->
+        <div class="special__card" data-id="9" data-price="239.00">
+          <img src="img/ancas.jpg" alt="Platillo 9">
+          <h4>Ancas de rana</h4>
+          <p>Son un platillo en el que se cocinan las patas traseras de la rana, que se caracterizan por su carne suave y de sabor delicado.</p>
+          <div class="special__ratings">⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$239.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 10 -->
+        <div class="special__card" data-id="10" data-price="239.00">
+          <img src="img/camarones a la diabla.png" alt="Platillo 10">
+          <h4>Camarones a la diabla</h4>
+          <p>Son un platillo picante y sabroso, en el que los camarones se cocinan en una salsa roja hecha con chiles secos (como el chipotle o guajillo), ajo, tomate y especias.</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$239.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 11 -->
+        <div class="special__card" data-id="11" data-price="424.00">
+          <img src="img/salmon.jpg" alt="Platillo 11">
+          <h4>Salmon a la parilla</h4>
+          <p> Es un platillo en el que el filete de salmón se cocina sobre una parrilla, lo que le da un sabor ahumado y una textura crujiente por fuera, mientras mantiene su jugosidad por dentro. </p>
+          <div class="special__ratings">⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$424.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+        <!-- Platillo 12 -->
+        <div class="special__card" data-id="12" data-price="382.00">
+          <img src="img/pulpo.jpg" alt="Platillo 12">
+          <h4>Pulpo zarandeado</h4>
+          <p>El pulpo se cocina a la parrilla después de ser marinado con una mezcla de salsas, especias, y limón, lo que le da un sabor ahumado y un toque picante.</p>
+          <div class="special__ratings">⭐⭐⭐⭐⭐</div>
+          <div class="special__footer">
+            <span class="price">$382.00 Mxn</span>
+            <button class="add-to-cart-btn">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrito -->
+    <section class="cart__container">
+      <div class="section__header">
+        Carrito de Compras
+      </div>
+      <div id="cart-items" class="cart__items">
+        <!-- Aquí se mostrarán los platillos añadidos -->
+      </div>
+      <div class="cart__total">
+        Total: $<span id="cart-total">0.00</span>
+      </div>
+      <button id="checkout-btn" class="btn">Pagar</button>
+    </section>
+
+    <!-- Mensaje de agradecimiento -->
+    <div id="thank-you-message" class="thank-you-message">
+      Muchas gracias, pronto estará su orden en la mesa.
+    </div>
+  </div>
+
+  <script>
+    // Variables del carrito
+    let cart = [];
+
+    // Función para actualizar el carrito en el HTML
+    function updateCart() {
+      const cartItemsContainer = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      
+      // Limpiar los items actuales
+      cartItemsContainer.innerHTML = '';
+
+      let total = 0;
+
+      // Recorrer los items del carrito
+      cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+          <div>${item.name}</div>
+          <div>$${item.price.toFixed(2)}</div>
+          <button class="remove-btn" data-id="${item.id}">Eliminar</button>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+        total += item.price;
+      });
+
+      // Actualizar el total
+      cartTotal.textContent = total.toFixed(2);
+    }
+
+    // Función para manejar agregar al carrito
+    function addToCart(event) {
+      const button = event.target;
+      const card = button.closest('.special__card');
+      
+      const item = {
+        id: card.getAttribute('data-id'),
+        name: card.querySelector('h4').textContent,
+        price: parseFloat(card.getAttribute('data-price'))
+      };
+
+      // Añadir al carrito
+      cart.push(item);
+      
+      // Actualizar la visualización del carrito
+      updateCart();
+    }
+
+    // Función para eliminar del carrito
+    function removeFromCart(event) {
+      const button = event.target;
+      const itemId = button.getAttribute('data-id');
+      
+      // Filtrar el item del carrito
+      cart = cart.filter(item => item.id !== itemId);
+      
+      // Actualizar la visualización del carrito
+      updateCart();
+    }
+
+    // Función para manejar el pago
+    function handleCheckout() {
+      // Mostrar mensaje de agradecimiento
+      document.getElementById('thank-you-message').style.display = 'block';
+
+      // Limpiar carrito
+      cart = [];
+      updateCart();
+    }
+
+    // Agregar evento a los botones de "Agregar al carrito"
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+      button.addEventListener('click', addToCart);
+    });
+
+    // Agregar evento a los botones de "Eliminar"
+    document.getElementById('cart-items').addEventListener('click', function(event) {
+      if (event.target.classList.contains('remove-btn')) {
+        removeFromCart(event);
+      }
+    });
+
+    // Agregar evento al botón de pago
+    document.getElementById('checkout-btn').addEventListener('click', handleCheckout);
+  </script>
+</body>
+</html>

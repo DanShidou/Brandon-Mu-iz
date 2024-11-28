@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dannys Restaurant</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">DANNY<span>S</span></a>
+          <img src="img/logotipo.jpeg" alt="">
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#Home">Inicio</a></li>
+        <li><a href="#special">Especial</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#client">Clientes</a></li>
+        <li><a href="#contact">Contactanos</a></li>
+      </ul>
+      <div class="nav__btn">
+        <button class="btn"><i class="ri-shopping-bag-fill"></i></button>
+      </div>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="img/filete.avif" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>"Frescura del mar<span> en cada bocado."</span>.</h1>
+        <p class="section__description">
+            "¡Ven y déjate cautivar por el sabor del océano! Disfruta de nuestros mariscos frescos, preparados al momento y acompañados de los mejores sabores. ¡Te esperamos para una experiencia única!"
+        </p>
+        <div class="header__btn">
+          <button class="btn">EMPECEMOS</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container special__container" id="special">
+      <h2 class="section__header">Estos Son Nuestros Platos Especiales</h2>
+      <p class="section__description">
+        "Cada bocado es un viaje directo al mar. Nuestros platos de mariscos, frescos y llenos de sabor, te ofrecen una experiencia única que hará que regreses por más. Desde camarones jugosos hasta langostas delicadas, cada ingrediente es cuidadosamente seleccionado para brindarte lo mejor del océano en tu mesa. ¡Ven y disfruta de la frescura en su máxima expresión!"
+      </p>
+      <div class="special__grid">
+        <div class="special__card">
+          <img src="img/empanizad.jpg" alt="special" />
+          <h4>Filete de pescado empanizado</h4>
+          <p>
+            El filete de pescado se sirve con una suave capa de especias y mantequilla derretida, acompañado de papas doradas, ensalada fresca y arroz. Un plato ligero, sabroso y lleno de frescura.
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">$140.00 Mxn</p>
+            <button class="btn">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/camarones.webp" alt="special" />
+          <h4>Camarones empanizados con philadelphia</h4>
+          <p>
+            Camarones empanizados rellenos de queso Philadelphia, acompañados de papas fritas y ensalada fresca. ¡Irresistibles y llenos de sabor!
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">$160.00 Mxn</p>
+            <button class="btn">Añadir al carrito</button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="img/mojarra.jpg" alt="special" />
+          <h4>Mojarra empanizada</h4>
+          <p>
+            Mojarra frita, crujiente por fuera y jugosa por dentro, acompañada de arroz, papas fritas y ensalada fresca. ¡El sabor del mar en su máxima expresión!
+          </p>
+          <div class="special__ratings">
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+            <span><i class="ri-star-fill"></i></span>
+          </div>
+          <div class="special__footer">
+            <p class="price">$175.00 Mxn</p>
+            <button class="btn">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container explore__container">
+      <div class="explore__image">
+        <img src="img/coctel.png" alt="explore" />
+      </div>
+      <div class="explore__content">
+        <h1 class="section__header">"Los mejores sabores del mar, frescos y listos para ti."</h1>
+        <p class="section__description">
+          "Disfruta de la frescura y el sabor incomparable de nuestros mariscos, seleccionados cuidadosamente para ofrecerte una experiencia única que te hará sentir como si estuvieras junto al mar en cada bocado."  Explore un menú diseñado para equilibrar el sabor y la nutrición, garantizando que cada bocado sea satisfactorio y nutritivo.
+
+        </p>
+        <div class="explore__btn">
+          <button class="btn">
+            Explorar la Historia <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <span class="banner__icon"><i class="ri-bowl-fill"></i></span>
+        <h4>Ordena tu comida </h4>
+        <p>
+            Realice sus pedidos de comida en línea sin problemas con solo unos pocos clics. Disfrute de la comodidad y eficiencia al seleccionar de nuestro variado menú de deliciosos platos.
+        </p>
+        <a href="enlaceCompra.html">
+          Ordenar ahora
+          <span><i class="ri-arrow-right-line"></i></span>
+        </a>
+      </div>
+      <div class="banner__card">
+        <span class="banner__icon"><i class="ri-truck-fill"></i></span>
+        <h4>Servicio a domicilio muy pronto</h4>
+        <p>
+            "Próximamente, llevaremos el sabor del mar directamente a tu puerta con nuestro servicio a domicilio. ¡Mantente atento para disfrutar de nuestros deliciosos mariscos sin salir de casa!"
+        </p>
+        <a href="#">
+          Ordena a domicilio muy pronto
+          <span><i class="ri-arrow-right-line"></i></span>
+        </a>
+      </div>
+      <div class="banner__card">
+        <span class="banner__icon"><i class="ri-star-smile-fill"></i></span>
+        <h4>Disfruta de tu comida en todo momento</h4>
+        <p>
+            Siéntese, relájese y espere su comida para que pruebe los mejores sabores mientras llega su comida meticulosamente preparada. Deléitese con la delicia de cada bocado, sabiendo que su satisfacción es nuestra principal prioridad.
+        </p>
+        <a href="#">
+            Ver más
+          <span><i class="ri-arrow-right-line"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="chef" id="chef">
+      <img src="img/vegetales.avif" alt="topping" class="chef__bg" />
+      <div class="section__container chef__container">
+        <div class="chef__image">
+          <img src="img/chef.jpg" alt="chef" />
+        </div>
+        <div class="chef__content">
+          <h2 class="section__header">"Con pasión, nuestro chef transforma los platos más frescos en auténticas obras maestras de sabor."</h2>
+          <p class="section__description">
+            "Sumérgete en una experiencia culinaria única, donde nuestro chef experto en mariscos combina frescura, tradición y creatividad en cada plato. Con su pasión por el mar, transforma los mejores ingredientes en exquisitas obras maestras que te harán disfrutar de los auténticos sabores del océano."
+          </p>
+          <ul class="chef__list">
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Sabe cómo combinar sabores y técnicas para ofrecer platos que destacan la frescura y el sabor del mar.
+            </li>
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Posee habilidades para manejar tipos de pescado, asegurando que cada preparación esté cocida a la perfección, al vapor, a la parrilla o frita.
+            </li>
+            <li>
+              <span><i class="ri-checkbox-fill"></i></span>
+              Cada plato es una obra maestra que refleja su dedicación y amor por el océano, ofreciéndote una experiencia gastronómica única.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Lo que nuestros clientes nos estan diciendo</h2>
+      <p class="section__description">
+        Explora los comentarios y reseñas que muestran nuestro compromiso con la calidad, el servicio y la satisfacción del cliente.
+      </p>
+      <div class="client__swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                    "Una experiencia increíble. Los mariscos frescos y perfectamente preparados, el ambiente es acogedor y el servicio excepcional. Definitivamente un lugar al que volveré siempre que quiera disfrutar de un buen plato del mar."
+                </p>
+                <img src="img/daniel.jpeg" alt="client" />
+                <h4>Daniel Muñiz</h4>
+                <h5>Cliente Premium</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                    "¡Increíble! La calidad de los ingredientes es insuperable, los platos son deliciosos y el personal es muy atento. Me sorprendió la variedad en el menú y lo bien que manejan los sabores. Sin duda, uno de los mejores restaurantes de mariscos que he probado."
+                </p>
+                <img src="img/guillermo.jpeg" alt="client" />
+                <h4>Guillermo de la Vega</h4>
+                <h5>Cliente Premium</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                    "Desde la entrada hasta el postre, todo fue excelente. El chef realmente sabe lo que hace, cada platillo tiene un toque único y fresco. El ambiente es perfecto para una comida en familia o con amigos. Recomendadísimo."
+                </p>
+                <img src="img/gustavo.jpeg" alt="client" />
+                <h4>Gustavo Cortes</h4>
+                <h5>Cliente Premium</h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <p>
+                  El servicio es excepcional, con un personal atento y siempre dispuesto a hacer que te sientas como en casa. La comida, fresca y deliciosa, destaca por su sabor y presentación. 
+                </p>
+                <img src="img/danni.jpeg" alt="client" />
+                <h4>Danniela Marroquin</h4>
+                <h5>Cliente Premium</h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#">DANNY<span>S</span></a>
+          </div>
+          <p class="section__description">
+            "En Danny's, cada bocado es una explosión de sabor que te hará volver por más. ¡Ven y descubre por qué somos el destino favorito de los amantes de la buena comida!"
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Producto</h4>
+          <ul class="footer__links">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Especiales</a></li>
+            <li><a href="#">Ofertas de comida</a></li>
+            <li><a href="#">Opciones de envio proximamente</a></li>
+            <li><a href="#">Ofertas de temporada</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Informacion</h4>
+          <ul class="footer__links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Informacion Nutricional</a></li>
+            <li><a href="#">Informacion de ingredientes</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Compañia</h4>
+          <ul class="footer__links">
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="#">Carrera</a></li>
+            <li><a href="#">Terminos De Servicio</a></li>
+            <li><a href="#">Politicas De Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 DANNYS Restaurant. Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
