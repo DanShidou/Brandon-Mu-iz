@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Innovadora</title>
+
+    <style>
+        /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #131313;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 100px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+#eslogan {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#historia, #productos, #vision-mision {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+h2 {
+    color: #333;
+}
+
+.producto {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto h3 {
+    margin: 0;
+    color: #444;
+}
+
+.producto p {
+    color: #666;
+}
+
+#productos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Añadí espacio entre productos */
+}
+
+.producto {
+    flex: 1;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 250px; /* Ajusta el tamaño de las imágenes */
+    margin-bottom: 10px;
+}
+
+.producto:last-child {
+    margin-right: 0;
+}
+
+#vision-mision {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#vision-mision h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#vision-mision p {
+    color: #555;
+}
+
+#gracias {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: none;
+    margin-top: 30px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con el nombre de la empresa y el logo -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="Logo de la Empresa"> <!-- Reemplaza con la ruta de tu logo -->
+            <h1><span style="color: aqua;">INNOVATEC</span></h1>
+        </div>
+    </header>
+
+    <!-- Marquee para el eslogan -->
+    <section id="eslogan">
+        <marquee behavior="scroll" direction="left">"Pedaleando hacia un futuro más limpio y conectado."</marquee>
+    </section>
+
+    <!-- Historia de la empresa -->
+    <section id="historia">
+        <h2>Nuestra Historia</h2>
+        <p>En 2025, un grupo de jóvenes emprendedores con una pasión por la sostenibilidad y la innovación decidió dar un paso audaz para cambiar la forma en que nos movemos. Observando las crecientes preocupaciones sobre la contaminación y la dependencia de los combustibles fósiles, supimos que necesitábamos encontrar una solución tecnológica que no solo beneficiara al medio ambiente, sino que también mejorara la vida diaria de las personas.
+            <br>
+            <br>
+            El sueño comenzó en un pequeño taller donde, después de muchas horas de investigación y experimentación, nació nuestra primera idea: un maletín innovador que no solo facilitara el transporte de dispositivos, sino que también aprovechara la energía generada por el pedaleo de una bicicleta. La clave estaba en la energía magnética, una tecnología limpia que podría transformar el esfuerzo físico en una fuente de energía útil para cargar teléfonos y otros gadgets mientras te desplazas.</p>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section id="vision-mision">
+        <h3>Misión</h3>
+        <p>Nuestra Misión es crear y promover la energía mecánica a través de la activación física, para así obtener un producto práctico y funcional con dos resultados deseados, los cuales son:
+            -Generar una energía eléctrica sin tener que depender de una corriente alterna. 
+            -Obtención de una buena y mejora condición física.
+            Con todo esto, se llega a tener un constante esfuerzo que se va acumulando cada vez más para llegar así a tener un  bien mayor. Así mismo, invitando a qué este mensaje e intención que deseamos tener llegué a una mayor cantidad de personas que se preocupen por un bienestar propio, no solamente económico sino también una mejora saludable para la sociedad que se presenta en el país.</p>
+        
+        <h3>Visión</h3>
+        <p>Nuestra visión es crear una sociedad más dinámica, con personas más saludables físicamente y el trabajar en oficina no te impida hacer ejercicio. Entonces, con este producto podrías hacer las dos cosas al mismo tiempo y además generar energía sin necesidad de contaminación o un proceso laborioso, solo con movimiento de pedaleo al igual que cuando usas una bicicleta, y poderlo hacer en cualquier lado que te encuentres sin necesidad de una corriente alterna (estar enchufado a la luz) y de esta manera que no sea tan tedioso el estar trabajando y tengas una distracción y mejor aún que esta actividad física pueda cargar tus dispositivos electrónicos de manera fácil, sencilla y segura.</p>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="producto">
+            <img src="img/pedal.jpg" alt="Maletín Magnético"> <!-- Reemplaza con la ruta de la imagen del maletín -->
+            <h3>MagnaBike</h3>
+            <p>El maletín que genera energía mientras te desplazas en bicicleta. Carga tus dispositivos de forma ecológica y sin esfuerzo. 20W De potencia carga tus dispositivos en 1 hora 20 minutos</p>
+            <p><strong>Precio: $599</strong></p>
+            <button onclick="comprar('MagnaBike')">Comprar</button>
+        </div>
+        <div class="producto">
+            <img src="img/pedal2.png" alt="PedalBox"> <!-- Reemplaza con la ruta de la imagen del PedalBox -->
+            <h3>MagnaBike Pro</h3>
+            <p>Una versión compacta y más ligera para viajes. Ideal para quienes necesitan cargar mucho mas rapido sus dispositivos presentamos una version mejorada. Carga Ultra Rapida</p>
+            <p><strong>Precio: $999</strong></p>
+            <button onclick="comprar('MagnaBike Pro')">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Mensaje de agradecimiento -->
+    <div id="gracias">
+        <h3>¡Gracias por tu compra!</h3>
+        <p>Estamos agradecidos por tu compra. ¡Gracias por elegir Innovatec y pedaleando hacia un futuro más limpio y conectado!</p>
+    </div>
+
+   <script>
+    // script.js
+    // Si deseas agregar alguna funcionalidad dinámica, puedes hacerlo aquí. Por ejemplo, cambiar el eslogan después de un tiempo:
+
+    setTimeout(function() {
+        document.querySelector('marquee').textContent = '"La energía del futuro, hoy disponible"';
+    }, 5000);
+
+    // Función para mostrar mensaje de agradecimiento
+    function comprar(producto) {
+        // Mostrar el mensaje de gracias
+        document.getElementById('gracias').style.display = 'block';
+    }
+   </script>
+
+</body>
+</html>
+
+
